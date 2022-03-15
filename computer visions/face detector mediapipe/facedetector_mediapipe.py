@@ -47,24 +47,22 @@ with mp_face_mesh.FaceMesh(
                                 'Y': data_point.y,
                                 })
             keypoint_x = (keypoints[0])
-            # print (keypoint_x)
-            for value in keypoint_x.values():
-              x_value= value
-              # conditional to find a face whe move to the lef side of the screen
-              if  x_value >= 0.0 and x_value < 0.20:
-                print ("your face is on the lef side of the screen")
+            print (keypoint_x)
+            # for value in keypoint_x.values():
+            #   x_value= value
+            #   # conditional to find a face whe move to the lef side of the screen
+            #   if  x_value >= 0.0 and x_value < 0.20:
+            #     # print ("your face is on the lef side of the screen")
 
-            # conditional to find a face whe move to the center of the screen
-              if  x_value >= 0.30 and x_value < 0.40:
-                print ("your face is on the center of the screen")
+            # # conditional to find a face whe move to the center of the screen
+            #   if  x_value >= 0.30 and x_value < 0.40:
+            #     # print ("your face is on the center of the screen")
 
-            # conditional to find a face whe move to the right of the screen
-              if  x_value >= 0.60 and x_value < 0.90:
-                print ("your face is on right side of the screen")
+            # # conditional to find a face whe move to the right of the screen
+            #   if  x_value >= 0.60 and x_value < 0.90:
+            #     # print ("your face is on right side of the screen")
 
-             
-
-
+            
 
     # print (keypoints [0])
 

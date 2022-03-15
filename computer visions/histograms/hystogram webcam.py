@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-
 cap = cv2.VideoCapture(0)
+
 
 while(True):
     ret, frame = cap.read()
@@ -14,6 +14,8 @@ while(True):
 
     if (cv2.waitKey(1) & 0xFF == 27):
         break
+
+
 
 cap.release()
 cv2.destroyAllWindows()
